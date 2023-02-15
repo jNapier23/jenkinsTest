@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Deploy'){
             steps {
-                sh "git commit -m testFile.txt"
+                sh "git add testFile.txt"
+                sh "git commit -m"
                 sh "git push"
             }
         }
