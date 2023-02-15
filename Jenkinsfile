@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh "git commit -m testFile.txt"
                 sh "git push"
+            }
         }
     }
 }
