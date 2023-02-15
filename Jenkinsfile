@@ -11,14 +11,16 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "echo 'Test' > testFile.txt"
-                sh "cat testFile.txt"
             }
         }
         stage('Deploy'){
             steps {
-                sh "git add testFile.txt"
-                sh "git commit -m 'added testFile to repo'"
-                sh "git push"
+//                 sh "git add testFile.txt"
+//                 sh "git commit -m 'added testFile to repo'"
+//                 sh "git push"
+//need to add code to join onto main branch
+                
+                sh "cat testFile.txt"
             }
         }
     }
